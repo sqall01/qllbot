@@ -41,6 +41,12 @@ DATABASE_FILE = 'storage/db.sqlite'
 # prefix char for commands
 COMMAND_CHAR = '#'
 
+# alertR module settings
+ALERTR_MYSQL_SERVER = 'localhost'
+ALERTR_MYSQL_PORT = 3306
+ALERTR_MYSQL_USER = "root"
+ALERTR_MYSQL_PASSWORD = "root"
+ALERTR_MYSQL_DB = 'alertr_db_manager'
 
 # https://docs.python.org/3.4/library/logging.config.html for details
 LOGGING = {
