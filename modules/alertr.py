@@ -28,7 +28,8 @@ class Sensor:
 
 @lib.cmd.command()
 def sensors(msg):
-    
+    """Outputs sensors information."""
+
     global SENSORS
 
     output_msg = ""
@@ -59,6 +60,7 @@ def sensors(msg):
 
 @lib.event.subscribe('watchdog_tick')
 def check_sensors(bot=None):
+    """Checks if a sensor has changed its state."""
 
     global SENSORS
     global SENSORS_STATE
@@ -88,6 +90,7 @@ def check_sensors(bot=None):
 
 @lib.event.subscribe('watchdog_tick')
 def update_sensor_data(bot=None):
+    """Updates local sensor information."""
 
     global SENSORS
     global UPDATE_TICK_COUNTER
