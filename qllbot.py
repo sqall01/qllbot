@@ -145,8 +145,8 @@ def main(daemonize=False, pid=None):
             print('SHA512-Hash: %s' % e.sha512_hash)
             print('SHA1-Hash: %s\n' % e.sha1_hash)
             decision = input('Do you want to add the host to the list of known'
-                             ' hosts and connect (j/n)? ').lower()
-            if decision != 'j':
+                             ' hosts and connect (y/n)? ').lower()
+            if decision != 'y':
                 return
             bot_args['known_hosts'][settings.HOST] = e.sha512_hash
             append_known_host(settings.HOST, e.sha512_hash)
