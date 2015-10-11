@@ -42,6 +42,7 @@ DATABASE_FILE = 'storage/db.sqlite'
 COMMAND_CHAR = '#'
 
 # alertR module settings
+# needs pip3 packet "mysqlclient"
 ALERTR_MYSQL_SERVER = 'localhost'
 ALERTR_MYSQL_PORT = 3306
 ALERTR_MYSQL_USER = "root"
